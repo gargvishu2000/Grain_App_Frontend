@@ -9,8 +9,7 @@ const CategoryProduct = () => {
     const [searchParams] = useSearchParams();
     const type = searchParams.get('type');
     const [products, setProducts] = useState([]);
-    const backendUrl = "http://localhost:3000"
-    const { token } = useContext(ShopContext);
+    const { token,backendUrl } = useContext(ShopContext);
 
     useEffect(() => {
         const fetchProducts = async () => {

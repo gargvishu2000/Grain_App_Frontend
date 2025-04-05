@@ -6,7 +6,7 @@ import axios from 'axios'
 export const ShopContext = createContext()
 
 const GrainContextProvider = (props) => {
-    const backendUrl = "http://localhost:3000";
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
     const currency = "₹";
     const deliveryCharge = 10;
     const [search, setSearch] = useState('');
