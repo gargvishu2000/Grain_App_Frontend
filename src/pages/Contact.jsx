@@ -2,6 +2,7 @@ import React from 'react'
 import { assets } from '../assets/frontend_assets/assets.js'
 import NewsletterBox from '../components/Newsletter.jsx'
 import Title from '../components/Title'
+import contactUs from '../assets/frontend_assets/contact.png'
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
     <Title text1={'CONTACT'} text2={'US'} />
   </div>
   <div className="my-10 flex flex-col justify-center md:flex-row gap-10 mb-28">
-    <img src='contact.png' className="w-full max-w-[450px]" alt="" />
+    <img src={contactUs} className="w-full max-w-[450px]" alt="" />
     <div className="flex flex-col justify-center items-start gap-4">
       <p className="font-semibold text-xl text-gray-600">Our Store</p>
       <div className="text-gray-500">

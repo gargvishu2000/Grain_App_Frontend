@@ -3,6 +3,7 @@ import { assets } from '../assets/frontend_assets/assets.js'
 import { Link } from 'react-router-dom'
 import fssai from '../assets/fssai.png'
 import agmark from '../assets/agmark.png'
+import logo from '../assets/logo.png'
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           {/* Company Info */}
           <div className='col-span-1 md:col-span-2'>
-            <img src='logo.png' className='h-8 mb-4' alt="GrainTrade" />
+            <img src={logo} className='h-8 mb-4' alt="GrainTrade" />
             <p className='text-gray-600 text-sm mb-4'>
               India's trusted B2B platform for grain trading, connecting farmers and buyers nationwide.
             </p>
