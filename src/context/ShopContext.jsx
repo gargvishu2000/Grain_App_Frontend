@@ -116,7 +116,7 @@ const GrainContextProvider = (props) => {
     // Fetch all grains
     const getGrains = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/grains/') 
+            const response = await axios.get(`${backendUrl}/api/grains`) 
             if (response.data.success) {
                 setGrains(response.data.grains);
             } else {
