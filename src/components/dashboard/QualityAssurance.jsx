@@ -1,5 +1,8 @@
 import React from 'react'
 import Title from '../Title'
+import agmark from '../../assets/agmark.png';
+import iso from '../../assets/iso.png';
+import fssai from '../../assets/fssai.png';
 
 const QualityAssurance = () => {
   const features = [
@@ -39,9 +42,9 @@ const QualityAssurance = () => {
       <div className='mt-12 bg-gray-50 rounded-lg p-8'>
         <h3 className='text-center font-semibold mb-6'>Our Certifications</h3>
         <div className='flex flex-wrap justify-center gap-8'>
-          <img src="/certifications/iso.png" alt="ISO" className='h-16' />
-          <img src="/certifications/fssai.png" alt="FSSAI" className='h-16' />
-          <img src="/certifications/agmark.png" alt="Agmark" className='h-16' />
+          <img src={iso} alt="ISO" className='h-16' />
+          <img src={fssai} alt="FSSAI" className='h-16' />
+          <img src={agmark} alt="Agmark" className='h-16' />
         </div>
       </div>
     </div>

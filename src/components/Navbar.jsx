@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
     const [visible, setVisible] = useState(false)
@@ -27,7 +28,7 @@ const Navbar = () => {
                 <div className='flex items-center justify-between h-16'>
                     {/* Logo */}
                     <Link to='/' className='flex items-center'>
-                        <img src='logo.png' className='h-8' alt="GrainTrade" />
+                        <img src={logo} className='h-8' alt="GrainTrade" />
                     </Link>
 
                     {/* Desktop Navigation */}
