@@ -6,7 +6,7 @@ import axios from 'axios'
 export const ShopContext = createContext()
 
 const GrainContextProvider = (props) => {
-    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+    const backendUrl = "https://grain-app-backend.onrender.com";
     const currency = "₹";
     const deliveryCharge = 10;
     const [search, setSearch] = useState('');
@@ -72,8 +72,6 @@ const GrainContextProvider = (props) => {
     const updateQuantity = async (grainId, quantity) => {
         try {
             if (quantity === 0) {
-                console.log("calling all autobots");
-
                 const response = await axios.delete(`${backendUrl}/api/cart/remove`, {
                     headers: { token },
                     data: { grainId }
