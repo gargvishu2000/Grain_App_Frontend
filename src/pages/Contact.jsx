@@ -2,7 +2,7 @@ import React from 'react'
 import { assets } from '../assets/frontend_assets/assets.js'
 import NewsletterBox from '../components/Newsletter.jsx'
 import Title from '../components/Title'
-import contactUs from '../assets/frontend_assets/contact.png'
+import contactUs from '../assets/contact.png'
 
 const Contact = () => {
   return (
