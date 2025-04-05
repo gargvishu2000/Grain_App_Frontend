@@ -1,6 +1,6 @@
 import React from 'react'
 import FeaturedGrains from '../components/dashboard/FeaturedGrains'
-import TradingStats from '../components/dashboard/TradingStats'
+import TradingStats from '../components/dashboard/Tradingstats'
 import QualityAssurance from '../components/dashboard/QualityAssurance'
 import NewsletterBox from '../components/Newsletter'
 import DiscountProduct from '../components/dashboard/DiscountProduct'
