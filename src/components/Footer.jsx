@@ -1,6 +1,8 @@
 import React from 'react'
 import { assets } from '../assets/frontend_assets/assets.js'
 import { Link } from 'react-router-dom'
+import fssai from '../assets/fssai.png'
+import agmark from '../assets/agmark.png'
 
 const Footer = () => {
   return (
@@ -14,8 +16,8 @@ const Footer = () => {
               India's trusted B2B platform for grain trading, connecting farmers and buyers nationwide.
             </p>
             <div className='flex gap-4'>
-              <img src="/certifications/fssai.png" alt="FSSAI" className='h-8' />
-              <img src="/certifications/agmark.png" alt="Agmark" className='h-8' />
+              <img src={fssai} alt="FSSAI" className='h-8' />
+              <img src={agmark} alt="Agmark" className='h-8' />
             </div>
           </div>
 

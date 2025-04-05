@@ -1,5 +1,8 @@
 import React from 'react'
 import Title from './Title'
+import iso from '../assets/iso.png'
+import agmark from '../assets/agmark.png'
+import fssai from '../assets/fssai.png'
 
 const TradingFeatures = () => {
   const features = [
@@ -84,10 +87,10 @@ const TradingFeatures = () => {
 
         {/* Trust Indicators */}
         <div className='mt-16 flex flex-wrap justify-center items-center gap-8 opacity-70'>
-          <img src="/certifications/fssai.png" alt="FSSAI" className='h-12' />
-          <img src="/certifications/iso.png" alt="ISO" className='h-12' />
-          <img src="/certifications/agmark.png" alt="Agmark" className='h-12' />
-          <img src="/certifications/apeda.png" alt="APEDA" className='h-12' />
+          <img src={fssai} alt="FSSAI" className='h-12' />
+          <img src={iso} alt="ISO" className='h-12' />
+          <img src={agmark} alt="Agmark" className='h-12' />
+          {/* <img src="/certifications/apeda.png" alt="APEDA" className='h-12' /> */}
         </div>
 
         {/* CTA Section */}

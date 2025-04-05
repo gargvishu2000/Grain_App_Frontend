@@ -1,5 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import iso from '../assets/iso.png';
+import agmark from '../assets/agmark.png';
+import fssai from '../assets/fssai.png';
 
 const Hero = () => {
   const navigate = useNavigate()
@@ -93,10 +96,10 @@ const Hero = () => {
 
         {/* Trust Badges */}
         <div className='relative z-10 flex flex-wrap justify-center gap-8 pb-16 opacity-90'>
-          <img src="/certifications/fssai.png" alt="FSSAI" className='h-12' />
-          <img src="/certifications/agmark.png" alt="Agmark" className='h-12' />
-          <img src="/certifications/iso.png" alt="ISO" className='h-12' />
-          <img src="/certifications/apeda.png" alt="APEDA" className='h-12' />
+          <img src={fssai} alt="FSSAI" className='h-12' />
+          <img src={agmark} alt="Agmark" className='h-12' />
+          <img src={iso} alt="ISO" className='h-12' />
+          {/* <img src="/certifications/apeda.png" alt="APEDA" className='h-12' /> */}
         </div>
       </div>
     </div>
